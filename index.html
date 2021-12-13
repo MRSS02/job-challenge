@@ -3,6 +3,15 @@
     <script src="./script.js"></script>
     <link rel="stylesheet" href="./styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#FF7979" />
+    <meta
+      name="description"
+      content="See how experienced developers solve problems 
+      in real time. Watching scripted tutorials is 
+      great, but understanding how developers think
+      is invaluable."
+    />
+    <title>Learn to code by watching others</title>
   </head>
   <body>
     <div id="pageContainer">
@@ -23,7 +32,7 @@
         </div>
         <div class="form">
           <form class="noMargin" onsubmit="validate(event)" 
-          method="post" novalidate="novalidate" >
+          method="post" novalidate="novalidate">
             <div id="firstName" class="inputWrapper">
               <input type="text" class="input" 
               placeholder="First Name" name="firstName" />
@@ -40,11 +49,14 @@
               <input type="password" class="input"
               placeholder="Password" name="password" />
             </div>
-            <button type="submit" class="confirm">Claim your free trial</button>
+            <button type="submit" id="submitButton" class="confirm" disabled >
+              Claim your free trial
+            </button>
             <p class="disclaimer">
               By clicking the button, you are agreeing to our 
-              <a class="attention">Terms and Services</a>
+              <a href="" class="attention">Terms and Services</a>
             </p>
+            <noscript>Please enable JavaScript to apply to this offer.</noscript>
           </form>
         </div>
       </div> 
