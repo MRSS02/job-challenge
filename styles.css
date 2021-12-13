@@ -1,3 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 body {
+  font-family: 'Poppins', sans-serif;
   background: url("./img/background.png");  
 }
+
+#pageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 0%;
+}
+
+.text {
+  color: #FFFFFF;
+  width: 40%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.headingInfo {
+  color: #FFFFFF;
+  background-color: #5E54A4;
+  font-size: 0.9375rem;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  margin-bottom: 1.2rem;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 1.0625rem 0;
+}
+
+.form {
+  background-color: #FFFFFF;
+  width: 540px;
+  padding: 2.5rem 0;
+  border-radius: 6px;
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  text-align: center;
+
+}
+
+.input {
+  width: 100%;
+  padding: 1rem 1.37rem;
+  border: 1px solid #DEDEDE;
+  border-radius: 6px;
+  border-style: solid;
+}
+
+.input:focus {
+  border: 1px solid #5E54A4;
+  font-weight: 600;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.input[aria-invalid="true"] {
+  border: 2px solid #FF7979;
+  box-sizing: border-box;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 85.185185185%;
+  margin: 0 auto 1.2rem auto;
+}
+
+.warningMessage {
+  font-style: italic;
+  color: #FF7979;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  float: right;
+  font-weight: 500;
+}
+
+.warningSign {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6%;
+}
+
+
+.confirm {
+  width: 85.185185185%;
+  background-color: #38CC8B;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: solid;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 1rem 1.37rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.confirm:hover {
+  background-color: #77E2B3;
+  transition: all 0.6s ease;
+}
+
+.disclaimer {
+  color: #BAB7D4;
+  font-size: 0.6875rem;
+  font-weight: medium;
+
+}
+
+.attention {
+  color: #FF7979;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+

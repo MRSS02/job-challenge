@@ -4,34 +4,49 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="titleContainer">
-      <h1 class="title">
-        Learn to code watching others
-      </h1>
-      <h3 class="subtitle">
-        See how experienced developers solve problems 
-        in real time. <br /> Watching scripted tutorials 
-        is great, but understanding how developers think
-        is invaluable.
-      </h3>
+    <div id="pageContainer">
+      <div class="text contentWrapper">
+        <h1 class="title">
+          Learn to code by watching others
+        </h1>
+        <h3 class="subtitle">
+          See how experienced developers solve problems 
+          in real time. Watching scripted tutorials is 
+          great, but understanding how developers think
+          is invaluable.
+        </h3>
+      </div>
+      <div class="contentWrapper">
+        <div class="headingInfo">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </div>
+        <div class="form">
+          <form onsubmit="validate(event)" method="post" novalidate="novalidate" >
+            <div id="firstName" class="inputWrapper">
+              <input type="text" class="input" 
+              placeholder="First Name" name="firstName" />
+            </div>
+            <div id="lastName" class="inputWrapper">
+              <input type="text" class="input" 
+              placeholder="Last Name" name="lastName" />
+            </div>
+            <div id="email" class="inputWrapper">
+              <input type="email" class="input" 
+              placeholder="Email Address" name="email" />
+            </div>
+            <div id="password" class="inputWrapper">
+              <input type="password" class="input"
+              placeholder="Password" name="password" />
+            </div>
+            <button type="submit" class="confirm">Claim your free trial</button>
+            <p class="disclaimer">
+              By clicking the button, you are agreeing to our 
+              <a class="attention">Terms and Services</a>
+            </p>
+          </form>
+        </div>
+      </div> 
     </div>
-    <div id="formContainer">
-      <div class="heading-info">
-        Try it free 7 days then $20/mo. thereafter
-      </div>
-      <div class="formBox">
-        <form onsubmit="validate()">
-          <input type="text" />
-          <input type="text" />
-          <input type="email"/>
-          <input type="password" />
-          <button type="submit" />
-          <p>
-            By clicking the button, you are agreeing to our 
-            <span class="attention">Terms and Services</span>
-          </p>
-        </form>
-      </div>
-    </div> 
+    
   </body>
 </html>
