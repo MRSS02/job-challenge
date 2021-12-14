@@ -122,6 +122,8 @@ noscript {
 }
 
 .confirm {
+  font-family: Poppins, sans-serif; /* Explicitely declaring font-family 
+  to prevent it not being inherited in Chromium-based browsers. */ 
   width: 85.185185185%;
   background-color: #38CC8B;
   box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
