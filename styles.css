@@ -119,6 +119,8 @@ noscript {
   bottom: 0.3125rem;
   transform: translateY(-50%);
   right: 5.782608696%;
+  height: 1.5rem;
+  width: auto;
 }
 
 .confirm {
